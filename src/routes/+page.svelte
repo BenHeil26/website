@@ -6,7 +6,7 @@
   <div class="article-container">
     <article>
       <h2>
-        <a class="post-title" href="/blog/{post.slug}">{post.title}</a>
+        <a class="post-title" href="/blogs/{post.slug}">{post.title}</a>
       </h2>
       <div class="post-meta">Posted on {post.date}</div>
       <p>
