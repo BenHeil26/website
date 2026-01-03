@@ -1,0 +1,47 @@
+body {
+  font-family: 'Fira Mono', 'Menlo', 'Monaco', 'Consolas', monospace;
+  margin: 0;
+  padding: 0;
+  background: #1e1e2e;
+  color: #cdd6f4;
+}
+
+header {
+  background: #181825;
+  color: #b4befe;
+  padding: 1rem 1rem 1rem 1rem;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  border-bottom: 2px solid #b4befe;
+  letter-spacing: 1px;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  color: #b4befe;
+  margin-top: 0;
+  font-family: inherit;
+}
+
+a{
+  color: #b4befe
+}
+
+article {
+  margin-bottom: 2rem;
+  border-left: 4px solid #f38ba8;
+  padding-left: 1rem;
+  background: rgba(30, 30, 46, 0.7);
+}
+
+
+footer {
+  text-align: center;
+  color: #a6adc8;
+  padding: 1rem;
+  border-top: 1px solid #313244;
+  background: #181825;
+  font-size: 0.95em;
+}
+
