@@ -22,6 +22,3 @@
   <br />
   <a href="mailto:ben.heil.dev@gmail.com">Email me</a>
 </footer>
-
-<style>
-</style>

@@ -21,19 +21,16 @@ This is a bunch of test content
 ```javascript
 console.log("Foo bar");
 function bar() {
-    x = 1 + 3;
-    y = x + 5;
+    let x = 1 + 3;
+    let y = x + 5;
     return y;
 }
-
 ```
 
+<pre class="mermaid nohighlight">
+    graph LR
+    A --- B
+    B-->C[fa:fa-ban forbidden]
+    B-->D(fa:fa-spinner);
+</pre>
 
-```mermaid
-graph TD
-    A[Start] --> B{Is it a sample?}
-    B -- Yes --> C[Show Mermaid]
-    B -- No --> D[Try Again]
-    C --> E[End]
-    D --> E
-```

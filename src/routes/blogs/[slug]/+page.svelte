@@ -1,16 +1,18 @@
 <script lang="ts">
-  import SvelteMarkdown from "@humanspeak/svelte-markdown";
-  import hljs from "highlight.js";
   import { onMount } from "svelte";
+
+  import hljs from "highlight.js";
+  import mermaid from "mermaid";
+  import { marked } from "marked";
 
   onMount(() => {
     hljs.highlightAll();
+    mermaid.initialize({ startOnLoad: true });
+    mermaid.run();
   });
 
   let { data } = $props();
 </script>
-
-<svelte:head></svelte:head>
 
 <div class="article-container">
   <a class="home-link" href="/">Home</a>
@@ -18,7 +20,7 @@
     <p style="font-style:italic">
       Posted on {data.metaData.date.toDateString()}
     </p>
-    <SvelteMarkdown source={data.content} />
+    {@html marked(data.content)}
   </article>
 </div>
 
