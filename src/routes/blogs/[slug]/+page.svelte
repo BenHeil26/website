@@ -7,6 +7,9 @@
 <div class="article-container">
   <a class="home-link" href="/">Home</a>
   <article>
+    <p style="font-style:italic">
+      Posted on {data.metaData.date.toDateString()}
+    </p>
     <SvelteMarkdown source={data.content} />
   </article>
 </div>

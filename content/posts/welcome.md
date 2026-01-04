@@ -1,6 +1,6 @@
 ---
 title: Welcome
-date: Jan 2, 2026
+date: 2024-06-10
 desc: Welcome to my blog!
 ---
 
@@ -14,8 +14,9 @@ This is a bunch of test content
 
 
 | foo | bar |
-| ----| ----|
-| table| entries| 
+| ---- | ----|
+| table     | entries   | 
+| more | entries are here |
 
 
 ```mermaid
