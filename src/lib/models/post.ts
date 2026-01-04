@@ -7,4 +7,5 @@ export class PostMetaData {
 export class Post {
   metaData!: PostMetaData;
   content!: string;
+  fname!: string;
 }

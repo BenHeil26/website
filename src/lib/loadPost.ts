@@ -4,17 +4,16 @@ import yaml from 'js-yaml';
 
 export default function(path: string): Post {
   let file = fs.readFileSync(path, { encoding: 'utf-8', flag: 'r' });
-  console.log(file);
 
-  let frontMatter = file.match(/^---.*---/)?.[0];
-  console.log(frontMatter);
-
-  if (frontMatter) {
+  let frontMatter = file.split('---\n').at(1);
+  let fname = path.split('/').at(-1);
+  let content = file.split('---\n').at(-1);
+  if (frontMatter && fname && content) {
     let metaData = yaml.load(frontMatter.replace('---', '')) as PostMetaData;
-    let content = file.replace('^---.*---', '');
     return {
       metaData,
-      content
+      content,
+      fname
     }
   }
 

@@ -1,16 +1,19 @@
 <script lang="ts">
-  let { posts } = $props();
+  import { Post, PostMetaData } from "$lib/models/post";
+  let { data } = $props();
 </script>
 
 <div class="article-container">
-  {#each posts as post}
+  {#each data.posts as post: Post}
     <article>
       <h2>
-        <a class="post-title" href="/blogs/{post.slug}">{post.title}</a>
+        <a class="post-title" href="/blogs/{post.fname}"
+          >{post.metaData.title}</a
+        >
       </h2>
-      <div class="post-meta">Posted on {post.date}</div>
+      <div class="post-meta">Posted on {post.metaData.date}</div>
       <p>
-        {post.desc}
+        {post.metaData.desc}
       </p>
     </article>
   {/each}

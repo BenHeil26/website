@@ -1,20 +1,6 @@
 import type { Post, PostMetaData } from '$lib/models/post';
-import fs from 'fs';
-import yaml from 'js-yaml';
+import loadPost from '$lib/loadPost';
 
-export function load(params: { slug: string }): Post {
-  let file = fs.readFileSync(`./content/posts/${params.slug}`, { encoding: 'utf-8', flag: 'r' });
-
-  let frontMatter = file.match(/^---.*---/)?.[0];
-
-  if (frontMatter) {
-    let metaData = yaml.load(frontMatter.replace('---', '')) as PostMetaData;
-    let content = file.replace('^---.*---', '');
-    return {
-      metaData,
-      content
-    }
-  }
-
-  throw new Error;
+export function load({ params }): Post {
+  return loadPost(`./content/posts/${params.slug}`);
 }
