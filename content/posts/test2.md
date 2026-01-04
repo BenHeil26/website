@@ -1,10 +1,7 @@
 ---
 title: "Test Post 2"
 date: 2024-06-10
-author: "Test Author"
-tags:
-  - test
-  - markdown
+desc: blah blah blah blah
 ---
 
 # Test Post 2

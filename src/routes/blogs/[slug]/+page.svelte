@@ -5,7 +5,7 @@
 </script>
 
 <div class="article-container">
-  <a href="/"> Home</a>
+  <a class="home-link" href="/">Home</a>
   <article>
     <SvelteMarkdown source={data.content} />
   </article>
@@ -20,5 +20,10 @@
     border-radius: 8px;
     box-shadow: 0 0 0 2px #313244;
     border: 1px solid #313244;
+  }
+
+  .home-link {
+    display: inline-block;
+    padding-bottom: 1em;
   }
 </style>

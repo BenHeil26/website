@@ -1,9 +1,9 @@
 <script lang="ts">
-  let { data } = $props();
+  let { posts } = $props();
 </script>
 
-{#each data.posts as post}
-  <div class="article-container">
+<div class="article-container">
+  {#each posts as post}
     <article>
       <h2>
         <a class="post-title" href="/blogs/{post.slug}">{post.title}</a>
@@ -13,10 +13,18 @@
         {post.desc}
       </p>
     </article>
-  </div>
-{/each}
+  {/each}
+</div>
 
 <style>
+  article {
+    margin-bottom: 1rem;
+    padding: 0.25rem 0 0.25rem 0;
+    border-left: 4px solid #b91c4a;
+    padding-left: 1rem;
+    background: rgba(30, 30, 46, 0.7);
+  }
+
   .article-container {
     max-width: 700px;
     margin: 2rem auto;
@@ -26,14 +34,14 @@
     box-shadow: 0 0 0 2px #313244;
     border: 1px solid #313244;
   }
+
   .post-title {
-    color: #b4befe;
     text-decoration: none;
     font-weight: bold;
   }
 
-  .post-title:hover {
-    color: #f38ba8;
+  h2:has(.post-title) {
+    margin: 0.5rem 0 0.5rem 0;
   }
 
   .post-meta {

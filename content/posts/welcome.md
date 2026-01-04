@@ -1,6 +1,7 @@
 ---
 title: Welcome
 date: Jan 2, 2026
+desc: Welcome to my blog!
 ---
 
 # Welcome to my blog
