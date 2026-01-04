@@ -1,8 +1,16 @@
 <script lang="ts">
   import SvelteMarkdown from "@humanspeak/svelte-markdown";
+  import hljs from "highlight.js";
+  import { onMount } from "svelte";
+
+  onMount(() => {
+    hljs.highlightAll();
+  });
 
   let { data } = $props();
 </script>
+
+<svelte:head></svelte:head>
 
 <div class="article-container">
   <a class="home-link" href="/">Home</a>

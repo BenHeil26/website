@@ -17,6 +17,16 @@ This is a bunch of test content
 | ---- | ----|
 | table     | entries   | 
 | more | entries are here |
+    
+```javascript
+console.log("Foo bar");
+function bar() {
+    x = 1 + 3;
+    y = x + 5;
+    return y;
+}
+
+```
 
 
 ```mermaid

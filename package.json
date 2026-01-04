@@ -24,6 +24,7 @@
 	},
 	"dependencies": {
 		"@humanspeak/svelte-markdown": "^0.8.13",
+		"highlight.js": "^11.11.1",
 		"js-yaml": "^4.1.1"
 	}
 }

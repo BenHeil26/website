@@ -23,7 +23,7 @@
   article {
     margin-bottom: 1rem;
     padding: 0.25rem 0 0.25rem 0;
-    border-left: 4px solid #b91c4a;
+    border-left: 4px solid var(--color-fg);
     padding-left: 1rem;
     background: rgba(30, 30, 46, 0.7);
   }
