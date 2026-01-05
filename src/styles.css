@@ -139,7 +139,6 @@ footer {
   fill: var(--color-header-bg) !important;
   stroke: var(--color-header-border) !important;
   color: var(--color-fg) !important;
-  /* stroke-width: 2px !important; */
 }
 
 .mermaid .node text {
