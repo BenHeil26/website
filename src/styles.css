@@ -2,25 +2,25 @@
 /* Theme variables */
 :root {
   --font-mono: 'Fira Mono', 'Menlo', 'Monaco', 'Consolas', monospace;
-  --color-bg: #1e1e2e;
-  --color-fg: #cdd6f4;
-  --color-header-bg: #181825;
-  --color-header-fg: #b4befe;
-  --color-header-border: #b4befe;
-  --color-link: #b4befe;
-  --color-link-hover: #f38ba8;
-  --color-footer-bg: #181825;
-  --color-footer-fg: #a6adc8;
-  --color-footer-border: #313244;
-  --color-hljs-bg: var(--color-bg);
+  --color-bg: #292522;
+  --color-fg: #ECE1D7;
+  --color-header-bg: #34302C;
+  --color-header-fg: #E49B5D;
+  --color-header-border: #E49B5D;
+  --color-link: #7F91B2;
+  --color-link-hover: #BD8183;
+  --color-footer-bg: #34302C;
+  --color-footer-fg: #ECE1D7;
+  --color-footer-border: #403A36;
+  --color-hljs-bg: var(--color-header-bg);
   --color-hljs-fg: var(--color-fg);
-  --color-hljs-comment: #6c7086;
-  --color-hljs-keyword: #b4befe;
-  --color-hljs-string: #a6e3a1;
-  --color-hljs-number: #fab387;
-  --color-hljs-built-in: #f9e2af;
-  --color-hljs-meta: #89dceb;
-  --color-hljs-deletion: #f38ba8;
+  --color-hljs-comment: #867462;
+  --color-hljs-keyword: #7F91B2;
+  --color-hljs-string: #85B695;
+  --color-hljs-number: #E49B5D;
+  --color-hljs-built-in: #EBC06D;
+  --color-hljs-meta: #A3A9CE;
+  --color-hljs-deletion: #BD8183;
 }
 
 body {
@@ -63,6 +63,54 @@ footer {
   border-top: 1px solid var(--color-footer-border);
   background: var(--color-footer-bg);
   font-size: 0.95em;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse; /* critical for clean grid lines */
+  border-spacing: 0;
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  color: var(--color-fg) /* body text */
+}
+
+table thead th {
+  background-color: var(--color-header-bg);      /* header background */
+  color: var(--color-header-fg);                 /* header text */
+  font-weight: 600;
+  text-align: left;
+  padding: 0.75rem 1rem;
+
+  border-bottom: 2px solid var(--color-header-border); /* thicker divider under header */
+}
+
+table tbody td {
+  padding: 0.75rem 1rem;
+  vertical-align: top;
+
+  border-bottom: 1px solid var(--color-header-bg); /* horizontal lines */
+  border-right: 1px solid var(--color-header-border);  /* vertical lines */
+}
+
+table tbody td:last-child,
+table thead th:last-child {
+  border-right: none;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: var(--color-header-bg);
+}
+
+table tbody tr:hover {
+  background-color: var(--color-link);
+}
+
+table .text-right {
+  text-align: right;
+}
+
+table .text-center {
+  text-align: center;
 }
 
 /* Highlight.js theme using variables */

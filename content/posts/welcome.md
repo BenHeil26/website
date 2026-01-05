@@ -47,3 +47,57 @@ function bar() {
 </pre>
 
 
+# Typography
+
+## Headings
+
+### Heading 3
+
+#### Heading 4
+
+##### Heading 5
+
+###### Heading 6
+
+Normal paragraph text with **bold**, *italic*, and ~~strikethrough~~ styles.
+
+> This is a blockquote.  
+> It can span multiple lines.
+
+## Lists
+
+- Unordered item 1
+- Unordered item 2
+  - Nested item
+    - Deeply nested
+
+1. Ordered item one
+2. Ordered item two
+   1. Nested ordered
+   2. Another nested
+
+## Code
+
+Inline code: `const foo = "bar";`
+
+```python
+def hello_world():
+    print("Hello, world!")
+```
+
+## Links & Images
+
+[Example link](https://example.com)
+
+![Alt text for image](https://placehold.co/600x400)
+
+## Horizontal Rule
+
+## Table
+
+| Syntax | Description |
+|--------|-------------|
+| Header | Title       |
+| Paragraph | Text     |
+
+

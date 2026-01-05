@@ -22,15 +22,15 @@
   article {
     margin-bottom: 1rem;
     padding: 0.25rem 0 0.25rem 0;
-    border-left: 4px solid var(--color-fg);
+    border-left: 4px solid var(--color-header-fg);
     padding-left: 1rem;
-    background: rgba(30, 30, 46, 0.7);
+    background: var(--color-header-bg);
   }
 
   .article-container {
     max-width: 700px;
     margin: 2rem auto;
-    background: #181825;
+    background: var(--color-bg);
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 0 0 2px #313244;
@@ -47,7 +47,7 @@
   }
 
   .post-meta {
-    color: #a6adc8;
+    color: var(--color-link);
     font-size: 0.9em;
     font-style: italic;
   }
