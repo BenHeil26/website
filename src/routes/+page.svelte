@@ -10,7 +10,7 @@
           >{post.metaData.title}</a
         >
       </h2>
-      <div class="post-meta">Posted on {post.metaData.date}</div>
+      <div class="post-meta">Posted on {post.metaData.date.toDateString()}</div>
       <p>
         {post.metaData.desc}
       </p>
