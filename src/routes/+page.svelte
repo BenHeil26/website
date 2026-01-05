@@ -1,10 +1,9 @@
 <script lang="ts">
-  import { Post, PostMetaData } from "$lib/models/post";
   let { data } = $props();
 </script>
 
 <div class="article-container">
-  {#each data.posts as post: Post}
+  {#each data.posts as post}
     <article>
       <h2>
         <a class="post-title" href="/blogs/{post.fname}"

@@ -7,7 +7,7 @@
 
   onMount(() => {
     hljs.highlightAll();
-    mermaid.initialize({ startOnLoad: true });
+    mermaid.initialize({ startOnLoad: true, theme: "dark" });
     mermaid.run();
   });
 

@@ -122,3 +122,94 @@ footer {
 .hljs-deletion {
   color: var(--color-hljs-deletion);
 }
+
+
+/* Mermaid.js custom theme */
+.mermaid {
+  font-family: var(--font-mono) !important;
+  border-radius: 6px !important;
+  padding: 1em !important;
+}
+
+.mermaid .node rect,
+.mermaid .node circle,
+.mermaid .node ellipse,
+.mermaid .node polygon 
+.mermaid .node path{
+  fill: var(--color-header-bg) !important;
+  stroke: var(--color-header-border) !important;
+  color: var(--color-fg) !important;
+  /* stroke-width: 2px !important; */
+}
+
+.mermaid .node text {
+  fill: var(--color-header-fg) !important;
+  font-family: var(--font-mono) !important;
+}
+
+.mermaid .edgeLabel {
+  background: var(--color-bg) !important;
+  color: var(--color-link) !important;
+  font-family: var(--font-mono) !important;
+}
+
+.mermaid .edgePath path,
+.mermaid .link {
+  stroke: var(--color-link) !important;
+}
+
+.mermaid .cluster rect {
+  fill: var(--color-footer-bg) !important;
+  stroke: var(--color-footer-border) !important;
+}
+
+.mermaid .cluster text {
+  fill: var(--color-footer-fg) !important;
+  font-family: var(--font-mono) !important;
+}
+
+.mermaid .label {
+  color: var(--color-fg) !important;
+  font-family: var(--font-mono) !important;
+}
+
+
+/* Mermaid Sequence Diagram Custom Theme */
+.mermaid .actor {
+  fill: var(--color-header-bg) !important;
+  stroke: var(--color-header-border) !important;
+  color: var(--color-header-fg) !important;
+  font-family: var(--font-mono) !important;
+}
+
+.mermaid .actor text {
+  fill: var(--color-header-fg) !important;
+  font-family: var(--font-mono) !important;
+}
+
+.mermaid .messageLine0,
+.mermaid .messageLine1 {
+  stroke: var(--color-link) !important;
+}
+
+.mermaid .messageText {
+  fill: var(--color-link) !important;
+  font-family: var(--font-mono) !important;
+}
+
+.mermaid .loopText, 
+.mermaid .noteText, 
+.mermaid .activationText {
+  fill: var(--color-footer-fg) !important;
+  font-family: var(--font-mono) !important;
+}
+
+.mermaid .note {
+  fill: var(--color-footer-bg) !important;
+  stroke: var(--color-footer-border) !important;
+}
+
+.mermaid .activation {
+  fill: var(--color-link) !important;
+  opacity: 0.2 !important;
+}
