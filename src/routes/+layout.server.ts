@@ -17,8 +17,6 @@ export function load({ url }: { url: URL }) {
     .sort((l, r) => l.metaData.date < r.metaData.date ? 1 : -1)
     .slice(page * size, (page * size) + size);
 
-  console.log(posts, pages, size)
-
   return { posts, pages, page, size, visible };
 }
 
