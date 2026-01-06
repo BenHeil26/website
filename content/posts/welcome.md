@@ -1,7 +1,6 @@
 ---
 title: Welcome
 date: 2024-06-10
-desc: Welcome to my blog!
 ---
 
 This is a bunch of test content

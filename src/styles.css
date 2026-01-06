@@ -125,6 +125,39 @@ table .text-center {
   border: 1px solid #313244;
 }
 
+.pager{
+  user-select:none;
+}
+
+.pager a{
+  background: var(--color-bg);
+  color: var(--color-link);
+  border: none;
+  text-align: center;
+  padding: 0 .25rem 0 .25rem ;
+  text-decoration: none;
+}
+
+.pager a.disabled{
+  pointer-events: none;
+  color: var(--color-header-bg);
+}
+
+.pager a.enabled:hover{
+  color: var(--color-link-hover);
+}
+
+.prev-page,
+.next-page{
+  /* font-weight: bold; */
+  font-size: 1.5rem;
+}
+
+a.selected{
+  font-weight: bold;
+  color:var(--color-header-fg);
+}
+
 /* Highlight.js theme using variables */
 .hljs {
   display: block;

@@ -3,7 +3,8 @@
   import { typewriter } from "$lib/transitions.js";
 
   let { data } = $props();
-  let visible = $state(false);
+
+  let visible = $state(data.visible);
 
   onMount(() => {
     visible = true;
@@ -40,6 +41,29 @@
       </p>
     </article>
   {/each}
+  <!-- pager -->
+  {#if data.pages > 1}
+    <div class="pager">
+      <a
+        class="prev-page {data.page > 0 ? 'enabled' : 'disabled'}"
+        href={`/?page=${data.page - 1}&size=${data.size}&visible=true`}>&lt;</a
+      >
+
+      {#each Array(data.pages) as _, index}
+        <a
+          href={`/?page=${index}&size=${data.size}&visible=true`}
+          class={data.page == index ? "selected" : "not-selected"}
+        >
+          {index + 1}
+        </a>
+      {/each}
+
+      <a
+        class="next-page {data.page < data.pages - 1 ? 'enabled' : 'disabled'}"
+        href={`/?page=${data.page + 1}&size=${data.size}&visible=true`}>&gt;</a
+      >
+    </div>
+  {/if}
 </div>
 
 <style>
