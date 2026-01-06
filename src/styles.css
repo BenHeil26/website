@@ -32,13 +32,9 @@ body {
 }
 
 header {
-  background: var(--color-header-bg);
   color: var(--color-header-fg);
-  padding: 1rem 1rem 1rem 1rem;
-  text-align: center;
   font-weight: bold;
   font-size: 1.5rem;
-  border-bottom: 2px solid var(--color-header-border);
   letter-spacing: 1px;
 }
 
@@ -60,9 +56,15 @@ footer {
   text-align: center;
   color: var(--color-footer-fg);
   padding: 1rem;
-  border-top: 1px solid var(--color-footer-border);
-  background: var(--color-footer-bg);
   font-size: 0.95em;
+}
+
+main{
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertical centering */
+  height: 100%;            /* or set a specific height */
 }
 
 table {
@@ -111,6 +113,16 @@ table .text-right {
 
 table .text-center {
   text-align: center;
+}
+
+.article-container {
+  max-width: 700px;
+  width: 100%;
+  margin: 2rem auto;
+  background: var(--color-bg);
+  padding: 2rem;
+  box-shadow: 0 0 0 2px #313244;
+  border: 1px solid #313244;
 }
 
 /* Highlight.js theme using variables */

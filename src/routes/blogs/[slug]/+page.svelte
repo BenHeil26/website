@@ -27,16 +27,6 @@
 </div>
 
 <style>
-  .article-container {
-    max-width: 700px;
-    margin: 2rem auto;
-    background: var(--color-bg);
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 0 0 2px #313244;
-    border: 1px solid #313244;
-  }
-
   .home-link {
     display: inline-block;
     padding-bottom: 1em;

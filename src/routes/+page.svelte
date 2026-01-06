@@ -11,10 +11,16 @@
 </script>
 
 <div class="welcome">
+  <pre class="welcome-banner">
+\ \      / /__| | ___ ___  _ __ ___   ___ 
+ \ \ /\ / / _ \ |/ __/ _ \| '_ ` _ \ / _ \
+  \ V  V /  __/ | (_| (_) | | | | | |  __/
+   \_/\_/ \___|_|\___\___/|_| |_| |_|\___|
+  </pre>
   <div class="typewrite-placeholder">
     {#if visible}
-      <h4 transition:typewriter={{ speed: 3 }}>
-        A collection of notes, snippets, and other ramblings
+      <h4 transition:typewriter={{ speed: 4 }}>
+        ** A collection of notes, snippets, and other ramblings
       </h4>
     {/if}
   </div>
@@ -45,7 +51,13 @@
 
   .welcome {
     max-width: 700px;
+    width: 100%;
     margin: 2rem auto;
+    color: var(--color-header-fg);
+  }
+
+  .welcome-banner {
+    font-size: 1.5rem;
   }
 
   article {
@@ -54,16 +66,6 @@
     border-left: 4px solid var(--color-header-fg);
     padding-left: 1rem;
     background: var(--color-header-bg);
-  }
-
-  .article-container {
-    max-width: 700px;
-    margin: 2rem auto;
-    background: var(--color-bg);
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 0 0 2px #313244;
-    border: 1px solid #313244;
   }
 
   .post-title {
