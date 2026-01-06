@@ -1,8 +1,27 @@
 <script lang="ts">
+  import { onMount } from "svelte";
+  import { typewriter } from "$lib/transitions.js";
+
   let { data } = $props();
+  let visible = $state(false);
+
+  onMount(() => {
+    visible = true;
+  });
 </script>
 
+<div class="welcome">
+  <div class="typewrite-placeholder">
+    {#if visible}
+      <h4 transition:typewriter={{ speed: 3 }}>
+        A collection of notes, snippets, and other ramblings
+      </h4>
+    {/if}
+  </div>
+</div>
+
 <div class="article-container">
+  <h2>Latest Blogs</h2>
   {#each data.posts as post}
     <article>
       <h2>
@@ -19,6 +38,16 @@
 </div>
 
 <style>
+  .typewrite-placeholder {
+    display: block;
+    min-height: 1.5rem;
+  }
+
+  .welcome {
+    max-width: 700px;
+    margin: 2rem auto;
+  }
+
   article {
     margin-bottom: 1rem;
     padding: 0.25rem 0 0.25rem 0;
