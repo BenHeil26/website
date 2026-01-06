@@ -7,12 +7,12 @@ export default function(path: string): Post {
 
   let frontMatter = file.split('---\n').at(1);
   let fname = path.split('/').at(-1);
-  let content = file.split('---\n').at(-1);
+  let content = file.split('---\n').slice(2);
   if (frontMatter && fname && content) {
     let metaData = yaml.load(frontMatter.replace('---', '')) as PostMetaData;
     return {
       metaData,
-      content,
+      content: content.join('---\n'),
       fname
     }
   }

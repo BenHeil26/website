@@ -4,8 +4,6 @@ date: 2024-06-10
 desc: Welcome to my blog!
 ---
 
-# Welcome to my blog
-
 This is a bunch of test content
 
 * a list item
@@ -92,6 +90,12 @@ def hello_world():
 ![Alt text for image](https://placehold.co/600x400)
 
 ## Horizontal Rule
+
+---
+
+---
+
+---
 
 ## Table
 

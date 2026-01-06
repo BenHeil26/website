@@ -17,9 +17,11 @@
 <div class="article-container">
   <a class="home-link" href="/">Home</a>
   <article>
+    <h1>{data.metaData.title}</h1>
     <p style="font-style:italic">
       Posted on {data.metaData.date.toDateString()}
     </p>
+    <hr />
     {@html marked(data.content)}
   </article>
 </div>
