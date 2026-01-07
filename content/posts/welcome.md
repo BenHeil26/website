@@ -1,106 +1,14 @@
 ---
 title: Welcome
-date: 2024-06-10
+date: 2026-01-07
+desc: Welcome to my tech blog
 ---
 
-This is a bunch of test content
+Hi I'm Ben :) and welcome to my tech blog.
 
-* a list item
-* another one
-    * nested
+I currently work as a Principal Software Engineer for [Paylocity](https://www.paylocity.com/).
 
+I am starting this after a 10 year tenure in the industry at the impetus of [this article](https://henry.codes/writing/a-website-to-destroy-all-websites/), which covers how awful the internet is today because of the consolidation of content and discourse on very few platforms.
 
-| foo | bar |
-| ---- | ----|
-| table     | entries   | 
-| more | entries are here |
-    
-```javascript
-console.log("Foo bar");
-function bar() {
-    let x = 1 + 3;
-    let y = x + 5;
-    return y;
-}
-```
-
-<pre class="mermaid nohighlight">
-    graph LR
-    A --- B
-    B-->C
-    B-->D;
-</pre>
-
-<pre class="mermaid nohighlight">
-    sequenceDiagram
-    participant User
-    participant Website
-    participant Server
-
-    User->>Website: Open page
-    Website->>Server: Request data
-    Server-->>Website: Respond with data
-    Website-->>User: Render content
-</pre>
-
-
-# Typography
-
-## Headings
-
-### Heading 3
-
-#### Heading 4
-
-##### Heading 5
-
-###### Heading 6
-
-Normal paragraph text with **bold**, *italic*, and ~~strikethrough~~ styles.
-
-> This is a blockquote.  
-> It can span multiple lines.
-
-## Lists
-
-- Unordered item 1
-- Unordered item 2
-  - Nested item
-    - Deeply nested
-
-1. Ordered item one
-2. Ordered item two
-   1. Nested ordered
-   2. Another nested
-
-## Code
-
-Inline code: `const foo = "bar";`
-
-```python
-def hello_world():
-    print("Hello, world!")
-```
-
-## Links & Images
-
-[Example link](https://example.com)
-
-![Alt text for image](https://placehold.co/600x400)
-
-## Horizontal Rule
-
----
-
----
-
----
-
-## Table
-
-| Syntax | Description |
-|--------|-------------|
-| Header | Title       |
-| Paragraph | Text     |
-
+I am hoping that my site will teach you something valuable or, at the very least, entertain you briefly. I will focus mostly on short content (quick guides, snippets, and high level thoughts) but may occasionally create longer form content.
 

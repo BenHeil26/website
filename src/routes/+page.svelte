@@ -41,6 +41,7 @@
       </p>
     </article>
   {/each}
+
   <!-- pager -->
   {#if data.pages > 1}
     <div class="pager">
