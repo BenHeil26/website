@@ -1,4 +1,4 @@
-FROM public.ecr.aws/docker/library/node:trixie-slimas build
+FROM public.ecr.aws/docker/library/node:trixie-slim as build
 
 COPY . /app
 
