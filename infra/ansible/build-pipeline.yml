@@ -1,0 +1,72 @@
+- name: Install Jenkins and Docker for CI/CD Pipeline
+  hosts: all
+  become: yes
+
+  vars:
+    jenkins_repo_url: http://pkg.jenkins.io/redhat-stable/jenkins.repo
+    jenkins_repo_key_url: https://pkg.jenkins.io/redhat-stable/jenkins.io.key
+    jenkins_user: jenkins
+
+  tasks:
+    - name: Add Jenkins repo
+      ansible.builtin.get_url:
+        url: "{{ jenkins_repo_url }}"
+        dest: /etc/yum.repos.d/jenkins.repo
+
+    - name: Import Jenkins repo key
+      ansible.builtin.rpm_key:
+        state: present
+        key: "{{ jenkins_repo_key_url }}"
+
+    - name: Upgrade yum itself
+      ansible.builtin.yum:
+        name: yum
+        state: latest
+
+    - name: Install required packages
+      ansible.builtin.yum:
+        name:
+          - git
+          - fontconfig
+          - java-21-amazon-corretto-headless
+        state: present
+
+    - name: Install Jenkins
+      ansible.builtin.yum:
+        name: jenkins
+        state: present
+
+    - name: Enable and start Jenkins
+      ansible.builtin.systemd:
+        name: jenkins
+        enabled: yes
+        state: started
+
+    # - name: Change Jenkins management port
+    #   ansible.builtin.lineinfile:
+    #     path: /etc/sysconfig/jenkins
+    #     regexp: '^JENKINS_PORT='
+    #     line: 'JENKINS_PORT=9090'  # Replace 9090 with your desired port
+    #   notify: Restart Jenkins
+    #
+    # - name: Restart Jenkins
+    #   ansible.builtin.systemd:
+    #     name: jenkins
+    #     state: restarted
+
+    - name: Install Docker
+      ansible.builtin.yum:
+        name: docker
+        state: present
+
+    - name: Enable and start Docker
+      ansible.builtin.systemd:
+        name: docker
+        enabled: yes
+        state: started
+
+    - name: Add Jenkins user to docker group
+      ansible.builtin.user:
+        name: "{{ jenkins_user }}"
+        groups: docker
+        append: yes

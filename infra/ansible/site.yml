@@ -14,8 +14,6 @@
           - httpd
           - mod_ssl
           - certbot
-          - mod_proxy
-          - mod_proxy_http
         state: present
 
     - name: Create ACME webroot
