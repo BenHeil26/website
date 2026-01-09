@@ -1,4 +1,4 @@
-FROM node:latest as build
+FROM public.ecr.aws/docker/library/node:trixie-slimas build
 
 COPY . /app
 
@@ -8,7 +8,7 @@ run npm ci
 
 RUN npm run build
 
-FROM node:latest as app
+FROM public.ecr.aws/docker/library/node:trixie-slim as app
 
 COPY --from=build /app/build /app
 COPY --from=build /app/content /app/content
