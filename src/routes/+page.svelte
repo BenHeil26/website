@@ -84,6 +84,17 @@
     font-size: 1.5rem;
   }
 
+  @media (max-width: 700px) {
+    .welcome {
+      max-width: 320px !important;
+      margin: 1rem auto !important;
+    }
+
+    .welcome-banner {
+      font-size: 0.75rem !important;
+    }
+  }
+
   article {
     margin-bottom: 1rem;
     padding: 0.25rem 0 0.25rem 0;

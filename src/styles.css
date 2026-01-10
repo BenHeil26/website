@@ -59,6 +59,24 @@ footer {
   font-size: 0.95em;
 }
 
+
+@media (max-width: 800px) {
+  .article-container {
+    max-width: 320px !important ;
+    width: 100% !important;
+    margin: 1rem auto !important;
+    background: var(--color-bg) !important;
+    padding: 1rem !important;
+    box-shadow: 0 0 0 2px #313244 !important;
+    border: 1px solid #313244 !important;
+  }
+
+  main {
+    min-height: 60vh !important;
+    padding: 0 0.5rem !important;
+  }
+}
+
 main{
   min-height: 85vh;
   display: flex;
