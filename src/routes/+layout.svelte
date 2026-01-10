@@ -18,8 +18,7 @@
   <br />
   <a href="mailto:ben.heil.dev@gmail.com" rel="me">Email me</a>
   <a href="https://github.com/BenHeil26" rel="me">Github</a>
-  <a href="https://www.linkedin.com/in/ben-heil-054074137/" rel="me">LinkedIn</a
-  >
+  <a href="www.linkedin.com/in/ben--heil" rel="me">LinkedIn</a>
   <br />
   <br />
   <a href="https://xn--sr8hvo.ws/previous">←</a>
