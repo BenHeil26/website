@@ -17,7 +17,7 @@
   &copy; 2026 Ben Heil. All rights reserved.
   <br />
   <a href="mailto:ben.heil.dev@gmail.com" rel="me">Email me</a>
-  <a href="github.com/BenHeil26" rel="me">Github</a>
+  <a href="https://github.com/BenHeil26" rel="me">Github</a>
   <a href="https://www.linkedin.com/in/ben-heil-054074137/" rel="me">LinkedIn</a
   >
   <br />
