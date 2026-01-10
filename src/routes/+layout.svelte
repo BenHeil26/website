@@ -20,4 +20,9 @@
   <a href="github.com/BenHeil26" rel="me">Github</a>
   <a href="https://www.linkedin.com/in/ben-heil-054074137/" rel="me">LinkedIn</a
   >
+  <br />
+  <br />
+  <a href="https://xn--sr8hvo.ws/previous">←</a>
+  An <a href="https://xn--sr8hvo.ws">IndieWeb Webring</a> 🕸💍
+  <a href="https://xn--sr8hvo.ws/next">→</a>
 </footer>
