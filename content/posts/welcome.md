@@ -1,7 +1,7 @@
 ---
 title: Welcome
 date: 2026-01-07
-desc: Welcome to my tech blog
+desc: Welcome to my Tech Blog
 ---
 
 Hi I'm Ben :) and welcome to my tech blog.
