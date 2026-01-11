@@ -9,6 +9,23 @@
   <title>Ben Heil's Blog</title>
 </svelte:head>
 
+<div>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-DNWPWNG0KB"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-DNWPWNG0KB");
+  </script>
+</div>
+
 <main>
   {@render children()}
 </main>
