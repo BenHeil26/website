@@ -8,7 +8,7 @@ It has been about seven years since I've built a personal website. My last one w
 
 I'd like for this site to be a lot different. I'm building content here with myself in mind as the primary audience. And while I do hope that others out there benefits from it, I am not building it for any reason other than my own enjoyment.
 
-That being said, I'm creating a series of posts that will document the basics of how I put the site together using SvelteKit. I won't cover every detail - but you can find the code on my GitHub [here](https://github.com/BenHeil26/website).
+That being said, I'm creating a post that will document the basics of how I put the site together using SvelteKit. I won't cover every detail - but you can find the code on my GitHub [here](https://github.com/BenHeil26/website).
 
 ## Getting Started
 
