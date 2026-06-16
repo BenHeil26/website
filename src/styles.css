@@ -134,7 +134,7 @@ table .text-center {
 }
 
 .article-container {
-  max-width: 700px;
+  max-width: 75vw;
   width: 100%;
   margin: 2rem auto;
   background: var(--color-bg);
