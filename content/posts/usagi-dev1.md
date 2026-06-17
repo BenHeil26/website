@@ -244,4 +244,43 @@ I'll briefly summarize below:
 
 Next time, we'll work on making a ship for our _Asteroids_ game and start implementing some of the mechanics that take this from toy to game. 
 
+Full code from this tutorial:
 
+```lua
+function _config()
+  return { name = "Asteroids", game_id = "com.usagiengine.Asteroids" }
+end
+
+function _init()
+  State = {
+    position = {
+      x = 10,
+      y = 10,
+    },
+    speed = 100
+  }
+end
+
+function bool_to_int(bool)
+  return bool and 1 or 0;
+end
+
+function _update(dt)
+  local input_vec = {
+    x = bool_to_int(input.held(input.RIGHT)) -
+        bool_to_int(input.held(input.LEFT)),
+    y = bool_to_int(input.held(input.DOWN)) -
+        bool_to_int(input.held(input.UP))
+  }
+
+  local normal = util.vec_normalize(input_vec);
+
+  State.position.x = (State.position.x + normal.x * State.speed * dt)
+  State.position.y = (State.position.y + normal.y * State.speed * dt)
+end
+
+function _draw(dt)
+  gfx.clear(gfx.COLOR_BLACK)
+  gfx.rect(State.position.x, State.position.y, 10, 10, gfx.COLOR_PINK)
+end
+```
