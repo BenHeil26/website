@@ -110,8 +110,8 @@ position = {
 function _draw(dt)
   gfx.clear(gfx.COLOR_BLACK)
   gfx.rect(position.x, position.y, 10, 10, gfx.COLOR_PINK)
-  position.x += 1 
-  posi
+  position.x += 1
+  position.y += 1
 end
 ```
 
