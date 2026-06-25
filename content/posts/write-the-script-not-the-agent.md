@@ -4,7 +4,7 @@ date: 2026-06-25
 desc: Repeatable tasks belong in a deterministic script or daemon, not in an agent you re-run every day.
 ---
 
-Disclaimer: this post is neither anti-AI or pro-AI. So if you have come here to feel empowered to be either then move along
+Disclaimer: this post is neither anti-AI nor pro-AI. So if you have come here to feel empowered to be either then move along
 
 I've spent the last few months automating little parts of my workflow. Things like committing my notes on a schedule, pulling my assigned tickets into my daily note, and scraping the day's messages into a section I can skim later. None of it is glamorous, but it's the kind of repeatable busywork that adds up. The modern temptation is to reach for an agent for all of it. Wire up an LLM with a few tools, give it access to your files and your calendar and your ticketing system, and just ask it every morning to "set up my daily note." That works. It's also the wrong tool for most of what I wanted. 
 
