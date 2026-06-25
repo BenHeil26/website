@@ -23,7 +23,7 @@ flowchart TD
     Done -. next run: tokens paid again .-> Trigger
 </pre>
 
-This is genuinely great for a certain class of problem. If the input is messy, the goal is fuzzy, or the right action depends on judgment that's hard to write down, then having a model reason about it each time is exactly what you want. Triaging an unfamiliar bug report, drafting a reply, summarizing a long thread into something useful, deciding which of fifteen possible follow-ups actually matters. That's where the stochastic nature of the thing is a feature. You don't know the answer ahead of time, so you pay a model to figure it out.
+This is genuinely great for a certain class of problem. If the input is messy, the goal is fuzzy, or the right action depends on judgment that's hard to write down, then having a model reason about it each time is exactly what you want. Triaging an unfamiliar bug report, summarizing a long thread into something useful, etc. That's where the stochastic nature of the thing is a feature. You don't know the answer ahead of time, so you pay a model to help figure it out. And you, the human, focus on the important decisions like what to do next.
 
 But a lot of the work I was automating isn't like that at all. "Commit the repo if it changed" has exactly one correct behavior. "Read the ticket list and write it into a markdown section" is a transform with no judgment in it. There's nothing to reason about. And once you notice that, putting a model in the loop starts to look expensive and a little reckless.
 
